@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+</head>
+<body style="background-color: skyblue;">
+	<h1>Retailer Page</h1>
+	<!-- <p th:text="'Welcome, '+${userDetails.name} +   '!' " /> -->
+
+
+	<!-- <b style="color: white">Welcome To Retailer</b> &nbsp;&nbsp;&nbsp;
+	<a th:href="@{/retailer}"> <input type="submit"
+		class="btn btn-info" value="Retailer Details" /></a>
+	<br>
+	<br>
+	<br> -->
+	<br>
+
+	<b style="color: white"> Customer</b> &nbsp;&nbsp;&nbsp;
+	<a th:href="@{/customer}"> <input type="submit"
+		class="btn btn-info" value="Customer Details" /></a>
+	<br>
+	<br>
+	<br>
+	<b style="color: white"> Supplier</b> &nbsp;&nbsp;&nbsp;
+	<a th:href="@{/supplier}"> <input type="submit"
+		class="btn btn-info" value="Supplier Details" /></a>
+	<br>
+	<br>
+	<br>
+
+
+	<b style="color: white"> Products</b> &nbsp;&nbsp;&nbsp;
+	<a th:href="@{/retailerProductsList}"> <input type="submit"
+		class="btn btn-info" value="Products Details" /></a>
+	<br>
+	<br>
+	<br>
+
+	<form th:action="@{/logout}" method="get">
+		<input type="submit" value="Logout" class="btn btn-info" />
+	</form>
+
+	<!-- <form th:action="@{/logout}" method="post">
+        <input type="submit"  value="Logout" /class="btn btn-info">
+    </form> -->
+
+
+
+</body>
+</html>
